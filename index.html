@@ -1,0 +1,3350 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTP Wood Thailand - รายงานสรุปผลการดำเนินงานและการเงิน ประจำเดือน กันยายน 2569</title>
+    <meta name="description" content="รายงานสรุปงบการเงิน รายรับ รายจ่าย เงินยืม ที.วอช และบัญชีภาระหนี้กู้ยืม บริษัท เอ็มทีพี วูด จำกัด ประจำเดือนกันยายน 2569 (September 2026)">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js CDN for Dynamic Interactive Charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+    <!-- Stylesheet -->
+    <style>
+/* MTP Wood Thailand - Premium White & Brown Design System */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-primary: #fdfbf7;      /* Warm soft cream */
+    --bg-secondary: #f6efe2;    /* Sand/Beige */
+    --bg-tertiary: #ebdcb9;     /* Light gold-brown */
+    --bg-card: #ffffff;         /* Elegant white */
+    
+    --text-primary: #3c2f2f;    /* Dark roasted espresso */
+    --text-secondary: #746055;  /* Milk chocolate */
+    --text-muted: #9f8c82;      /* Warm cocoa sand */
+    
+    --accent-color: #8c6239;    /* Rich teak wood brown */
+    --accent-hover: #6c4722;    /* Dark oak */
+    --accent-light: #fcf6eb;    /* Cream silk */
+    --accent-glow: rgba(140, 98, 57, 0.08);
+    
+    --success-color: #5d6e53;   /* Muted olive green */
+    --success-bg: #f2f5f0;
+    --danger-color: #a65b4c;    /* Terracotta/Rust red */
+    --danger-bg: #faf2f0;
+    --info-color: #7b8893;      /* Muted slate blue */
+    --info-bg: #f4f6f7;
+    
+    --border-color: #e8ded2;    /* Soft clay beige */
+    --border-hover: #cfbeab;
+    
+    --font-sans: 'Inter', 'Sarabun', sans-serif;
+    --border-radius-lg: 20px;
+    --border-radius-md: 12px;
+    --border-radius-sm: 8px;
+    
+    --shadow-sm: 0 2px 4px rgba(60, 47, 47, 0.02);
+    --shadow-md: 0 4px 12px rgba(60, 47, 47, 0.04);
+    --shadow-lg: 0 12px 24px rgba(60, 47, 47, 0.06);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: 
+        radial-gradient(circle at 0% 0%, rgba(235, 220, 185, 0.2) 0%, transparent 40%),
+        radial-gradient(circle at 100% 100%, rgba(140, 98, 57, 0.05) 0%, transparent 40%);
+    background-attachment: fixed;
+    padding: 2rem 1.5rem;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--border-hover);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Header styling */
+.app-header {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.logo-icon {
+    width: 52px;
+    height: 52px;
+    background-color: var(--accent-light);
+    border: 1px solid var(--border-color);
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.logo-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: currentColor;
+}
+
+.logo-text h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.logo-text p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.month-selector-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--accent-light);
+    border: 1px solid var(--border-color);
+    padding: 0.4rem 1rem;
+    border-radius: 9999px;
+}
+
+.month-selector-wrapper svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--accent-color);
+}
+
+.month-select {
+    background: transparent;
+    border: none;
+    color: var(--accent-color);
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    padding-right: 0.5rem;
+}
+
+/* Navigation Tabs */
+.tab-navigation {
+    display: flex;
+    gap: 0.5rem;
+    background-color: var(--bg-secondary);
+    padding: 0.375rem;
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--border-color);
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; /* Firefox */
+}
+
+.tab-navigation::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius-sm);
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tab-btn:hover {
+    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.tab-btn.active {
+    color: var(--accent-color);
+    background-color: var(--bg-card);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(140, 98, 57, 0.1);
+}
+
+.tab-btn svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.4s ease forwards;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* KPI Summary Grid */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.kpi-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-smooth);
+}
+
+.kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--border-hover);
+}
+
+.kpi-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: var(--border-radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kpi-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.icon-revenue {
+    background-color: var(--success-bg);
+    color: var(--success-color);
+    border: 1px solid rgba(93, 110, 83, 0.2);
+}
+
+.icon-expense {
+    background-color: var(--danger-bg);
+    color: var(--danger-color);
+    border: 1px solid rgba(166, 91, 76, 0.2);
+}
+
+.icon-balance {
+    background-color: var(--accent-light);
+    color: var(--accent-color);
+    border: 1px solid rgba(140, 98, 57, 0.2);
+}
+
+.icon-loan {
+    background-color: var(--info-bg);
+    color: var(--info-color);
+    border: 1px solid rgba(123, 136, 147, 0.2);
+}
+
+.kpi-info h3 {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.kpi-info p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.2;
+}
+
+.kpi-info .kpi-sub {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* Analytics Layout */
+.dashboard-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 992px) {
+    .dashboard-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.dashboard-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+    padding: 1.75rem;
+    box-shadow: var(--shadow-md);
+}
+
+.dashboard-card h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.75rem;
+}
+
+.dashboard-card h2 svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--accent-color);
+}
+
+.chart-box {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+/* Breakdown Lists */
+.breakdown-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.breakdown-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.breakdown-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.breakdown-name {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.breakdown-value {
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.progress-bar-bg {
+    background-color: var(--bg-secondary);
+    height: 8px;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: 999px;
+    width: 0%;
+    transition: width 1s ease-out;
+}
+
+/* Tables Layout & Searching */
+.table-section {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+    padding: 1.75rem;
+    box-shadow: var(--shadow-md);
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.table-header h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.search-and-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.search-box {
+    position: relative;
+    min-width: 250px;
+}
+
+.search-box svg {
+    position: absolute;
+    left: 0.875rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    fill: var(--text-muted);
+}
+
+.search-box input {
+    width: 100%;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.625rem 1rem 0.625rem 2.25rem;
+    border-radius: var(--border-radius-sm);
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    outline: none;
+    transition: var(--transition-smooth);
+}
+
+.search-box input:focus {
+    border-color: var(--accent-color);
+    background-color: var(--bg-card);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: var(--accent-light);
+    color: var(--text-primary);
+    font-weight: 600;
+    padding: 1rem 1.25rem;
+    border-bottom: 2px solid var(--border-color);
+    white-space: nowrap;
+}
+
+.data-table td {
+    padding: 0.875rem 1.25rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    white-space: nowrap;
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.data-table tbody tr:hover td {
+    background-color: var(--accent-light);
+    color: var(--text-primary);
+}
+
+.data-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Action button icons */
+.action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-smooth);
+}
+
+.action-btn-edit {
+    color: var(--accent-color);
+}
+
+.action-btn-edit:hover {
+    background-color: var(--accent-light);
+}
+
+.action-btn-delete {
+    color: var(--danger-color);
+}
+
+.action-btn-delete:hover {
+    background-color: var(--danger-bg);
+}
+
+.action-btn svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+/* Pagination Controls */
+.table-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.25rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.page-info {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.page-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-pagination {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-sm);
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.btn-pagination:hover:not(:disabled) {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    background-color: var(--accent-light);
+}
+
+.btn-pagination:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* Badges */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.65rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-in {
+    background-color: var(--success-bg);
+    color: var(--success-color);
+    border: 1px solid rgba(93, 110, 83, 0.2);
+}
+
+.badge-out {
+    background-color: var(--danger-bg);
+    color: var(--danger-color);
+    border: 1px solid rgba(166, 91, 76, 0.2);
+}
+
+.badge-info {
+    background-color: var(--info-bg);
+    color: var(--info-color);
+    border: 1px solid rgba(123, 136, 147, 0.2);
+}
+
+/* Buttons System */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: var(--border-radius-sm);
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-hover);
+}
+
+.btn-secondary {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--bg-tertiary);
+    border-color: var(--border-hover);
+}
+
+.btn-danger {
+    background-color: var(--danger-bg);
+    color: var(--danger-color);
+    border: 1px solid rgba(166, 91, 76, 0.2);
+}
+
+.btn-danger:hover {
+    background-color: #f7e3df;
+}
+
+.btn svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    stroke: currentColor;
+    stroke-width: 0;
+}
+
+/* OCR Receipt Upload Layout styles */
+.ocr-split-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .ocr-split-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.dropzone-box {
+    border: 2px dashed var(--border-color);
+    background-color: var(--accent-light);
+    border-radius: var(--border-radius-lg);
+    padding: 4rem 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.dropzone-box:hover, .dropzone-box.dragover {
+    border-color: var(--accent-color);
+    background-color: var(--bg-secondary);
+}
+
+.dropzone-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--bg-card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.dropzone-icon svg {
+    width: 32px;
+    height: 32px;
+    fill: currentColor;
+}
+
+/* Image Scanner Loading styles */
+.scanner-loading-screen {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(253, 251, 247, 0.95);
+    z-index: 10;
+    border-radius: var(--border-radius-lg);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.scanner-loading-screen.active {
+    display: flex;
+}
+
+.loader-spinner {
+    width: 48px;
+    height: 48px;
+    border: 3.5px solid var(--bg-secondary);
+    border-top: 3.5px solid var(--accent-color);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 280px;
+    text-align: left;
+}
+
+.loading-step-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.loading-step-item.active {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.loading-step-item.completed {
+    color: var(--success-color);
+}
+
+.loading-step-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: currentColor;
+}
+
+/* Image preview structure */
+.image-preview-wrapper {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+    overflow: hidden;
+}
+
+.image-preview-wrapper img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: var(--border-radius-sm);
+}
+
+/* Table form input styles */
+.items-edit-table-wrapper {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+}
+
+.items-edit-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.items-edit-table th {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    font-weight: 600;
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.items-edit-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.inline-form-input {
+    width: 100%;
+    border: 1px solid transparent;
+    background: transparent;
+    padding: 0.35rem 0.5rem;
+    border-radius: var(--border-radius-sm);
+    font-family: inherit;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    transition: var(--transition-smooth);
+}
+
+.inline-form-input:hover {
+    background-color: var(--accent-light);
+}
+
+.inline-form-input:focus {
+    border-color: var(--border-hover);
+    background-color: var(--bg-card);
+    outline: none;
+}
+
+/* Modals layout */
+.modal-mask {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(60, 47, 47, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.modal-mask.active {
+    display: flex;
+}
+
+.modal-window {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+    max-width: 550px;
+    width: 100%;
+    overflow: hidden;
+    animation: modalPop 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalPop {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.modal-title-bar {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent-light);
+}
+
+.modal-title-bar h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.modal-body-content {
+    padding: 1.5rem;
+}
+
+.modal-action-bar {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--bg-secondary);
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+}
+
+/* Form structure */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.form-grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 576px) {
+    .form-grid-two {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.form-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.standard-input {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.65rem 0.85rem;
+    border-radius: var(--border-radius-sm);
+    font-family: inherit;
+    font-size: 0.9rem;
+    outline: none;
+    transition: var(--transition-smooth);
+}
+
+.standard-input:focus {
+    border-color: var(--accent-color);
+    background-color: var(--bg-card);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+/* Toasts Alert System */
+.toasts-box {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    z-index: 200;
+}
+
+.simple-toast {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transform: translateX(120%);
+    animation: toastPopIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    min-width: 280px;
+}
+
+@keyframes toastPopIn {
+    to { transform: translateX(0); }
+}
+
+.simple-toast.toast-success {
+    border-left: 5px solid var(--success-color);
+}
+
+.simple-toast.toast-success svg {
+    fill: var(--success-color);
+}
+
+.simple-toast.toast-error {
+    border-left: 5px solid var(--danger-color);
+}
+
+.simple-toast.toast-error svg {
+    fill: var(--danger-color);
+}
+
+.simple-toast.toast-info {
+    border-left: 5px solid var(--info-color);
+}
+
+.simple-toast.toast-info svg {
+    fill: var(--info-color);
+}
+
+.simple-toast svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.toast-body {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+/* Empty data placeholder */
+.table-empty-box {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.table-empty-box svg {
+    width: 48px;
+    height: 48px;
+    fill: currentColor;
+    margin-bottom: 0.75rem;
+}
+
+.table-empty-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+/* Footer layout */
+.app-footer {
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* Ensure loading overlay never blocks UI */
+#loading-overlay, .loading-overlay { display: none !important; opacity: 0 !important; pointer-events: none !important; }
+
+</style>
+
+    <style>
+        /* Custom enhancements for September 2026 Dashboard */
+        .header-badges {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .badge-pill {
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+        .badge-pill.status-closed {
+            background-color: var(--success-bg);
+            color: var(--success-color);
+            border: 1px solid rgba(93, 110, 83, 0.3);
+        }
+        .badge-pill.status-online {
+            background-color: #e8f4fd;
+            color: #0d47a1;
+            border: 1px solid rgba(13, 71, 161, 0.2);
+        }
+        .badge-pill.status-month {
+            background-color: var(--accent-light);
+            color: var(--accent-color);
+            border: 1px solid rgba(140, 98, 57, 0.3);
+        }
+        .kpi-card .kpi-num {
+            font-size: 1.65rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0.25rem 0;
+            letter-spacing: -0.02em;
+        }
+        .table-toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding: 0.75rem 1rem;
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-md);
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-sm);
+            padding: 0.4rem 0.8rem;
+            min-width: 260px;
+        }
+        .search-box input {
+            border: none;
+            outline: none;
+            font-family: inherit;
+            font-size: 0.9rem;
+            width: 100%;
+            margin-left: 0.5rem;
+        }
+        .filter-select {
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-sm);
+            padding: 0.45rem 0.85rem;
+            background: #fff;
+            font-family: inherit;
+            font-size: 0.875rem;
+            color: var(--text-primary);
+            outline: none;
+        }
+        .github-box {
+            background: linear-gradient(135deg, #ffffff 0%, #fdfbf7 100%);
+            border: 2px solid var(--accent-color);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+        }
+        .code-pre {
+            background-color: #2b2118;
+            color: #f7ede2;
+            padding: 1rem 1.25rem;
+            border-radius: var(--border-radius-md);
+            font-family: 'Consolas', monospace;
+            font-size: 0.875rem;
+            overflow-x: auto;
+            line-height: 1.5;
+            position: relative;
+        }
+        .step-num {
+            width: 28px;
+            height: 28px;
+            background-color: var(--accent-color);
+            color: #fff;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Main Header -->
+        <header class="app-header">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2L4 14h5v8h6v-8h5L12 2z"/></svg>
+                </div>
+                <div class="logo-text">
+                    <h1>MTP Wood Thailand</h1>
+                    <p>รายงานสรุปผลการดำเนินงานและการเงิน ประจำเดือน กันยายน 2569 (September 2026)</p>
+                </div>
+            </div>
+
+            <div class="header-controls">
+                <div class="header-badges">
+                    <span class="badge-pill status-month">📅 งวดประจำเดือน กันยายน 2569</span>
+                    <span class="badge-pill status-closed">🔒 ปิดงบสมบูรณ์ 100%</span>
+                    <span class="badge-pill status-online">🌐 GitHub Pages Ready</span>
+                </div>
+
+                <div style="display: flex; gap: 0.5rem; align-items: center;">
+                    <a href="MTP_WOOD_Sep_2026.xlsx" download class="btn btn-outline" style="display:flex; align-items:center; gap:0.35rem; font-size:0.875rem;">
+                        <svg viewBox="0 0 24 24" style="width:16px; height:16px; fill:currentColor;"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                        ดาวน์โหลด Excel เดือน 9
+                    </a>
+                    <button onclick="window.print()" class="btn btn-outline" style="display:flex; align-items:center; gap:0.35rem; font-size:0.875rem;">
+                        <svg viewBox="0 0 24 24" style="width:16px; height:16px; fill:currentColor;"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+                        พิมพ์รายงาน
+                    </button>
+                    <button onclick="switchToTab('tab-github')" class="btn btn-primary" style="display:flex; align-items:center; gap:0.35rem; font-size:0.875rem;">
+                        <svg viewBox="0 0 24 24" style="width:16px; height:16px; fill:currentColor;"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                        สร้างลิ้งค์ GitHub อัตโนมัติ
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- KPI Cards Grid (6 Highlights) -->
+        <div class="kpi-grid">
+            <!-- 1. Total Revenue -->
+            <div class="kpi-card">
+                <div class="kpi-icon icon-revenue">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg>
+                </div>
+                <div class="kpi-info">
+                    <h3>รายรับรวมเดือนกันยายน 69</h3>
+                    <div class="kpi-num" id="kpi-rev" style="color:var(--success-color);">฿284,175.00</div>
+                    <div class="kpi-sub">รวม 16 บิลขายไม้และรับเงินโอน</div>
+                </div>
+            </div>
+
+            <!-- 2. Total Expenses -->
+            <div class="kpi-card">
+                <div class="kpi-icon icon-expense">
+                    <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2zm0-4H7V7h10v2zm0 8H7v-2h10v2z"/></svg>
+                </div>
+                <div class="kpi-info">
+                    <h3>รายจ่ายรวมเดือนกันยายน 69</h3>
+                    <div class="kpi-num" id="kpi-exp" style="color:var(--danger-color);">฿352,372.62</div>
+                    <div class="kpi-sub">รวม 52 รายการ (ค่าไม้, แรง, น้ำมัน)</div>
+                </div>
+            </div>
+
+            <!-- 3. Operating Net Result -->
+            <div class="kpi-card">
+                <div class="kpi-icon icon-balance">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+                </div>
+                <div class="kpi-info">
+                    <h3>ผลประกอบการสุทธิ (Net P&L)</h3>
+                    <div class="kpi-num" id="kpi-net">-฿68,197.62</div>
+                    <div class="kpi-sub">ขาดทุนสุทธิจากการดำเนินงานจริง</div>
+                </div>
+            </div>
+
+            <!-- 4. Interest Paid -->
+            <div class="kpi-card">
+                <div class="kpi-icon" style="background:#fff3e0; color:#e65100; border:1px solid rgba(230,81,0,0.2);">
+                    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.5h-2v-2h2zm0-4h-2V7h2z"/></svg>
+                </div>
+                <div class="kpi-info">
+                    <h3>ดอกเบี้ยจ่ายงวดนี้</h3>
+                    <div class="kpi-num" id="kpi-interest" style="color:#d84315;">฿12,000.00</div>
+                    <div class="kpi-sub">อาแสวง 7,500 + บ.วัน 4,500</div>
+                </div>
+            </div>
+
+            <!-- 5. T.Wash Revolving -->
+            <div class="kpi-card">
+                <div class="kpi-icon icon-loan">
+                    <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4 6h-4v2h4v2h-4v2h4v2H9V7h6v2z"/></svg>
+                </div>
+                <div class="kpi-info">
+                    <h3>เงินยืม ที.วอช (งวดนี้)</h3>
+                    <div class="kpi-num" id="kpi-twash" style="color:var(--accent-color);">฿169,069.61</div>
+                    <div class="kpi-sub">หมุนเวียน 27 ครั้งเพื่อเสริมสภาพคล่อง</div>
+                </div>
+            </div>
+
+            <!-- 6. Total Liabilities -->
+            <div class="kpi-card">
+                <div class="kpi-icon" style="background:#fce4ec; color:#c2185b; border:1px solid rgba(194,24,91,0.2);">
+                    <svg viewBox="0 0 24 24"><path d="M4 10v7h3v-7H4zm6 0v7h3v-7h-3zm6 0v7h3v-7h-3zM2 22h19v-3H2v3zm10-20L2 6v2h19V6l-9-4z"/></svg>
+                </div>
+                <div class="kpi-info">
+                    <h3>ภาระหนี้สินผูกพันรวม</h3>
+                    <div class="kpi-num" id="kpi-debts" style="color:#ad1457;">฿1,982,746.36</div>
+                    <div class="kpi-sub">รวมหนี้กู้ยืม 8 บัญชีทั้งหมด</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <nav class="tab-navigation">
+            <button class="tab-btn active" data-target="tab-overview">
+                <svg viewBox="0 0 24 24"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
+                📊 สรุปภาพรวม & กระแสเงินสด
+            </button>
+            <button class="tab-btn" data-target="tab-revenue">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                💰 1. รายรับประจำเดือน (16)
+            </button>
+            <button class="tab-btn" data-target="tab-expenses">
+                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2zm0-4H7V7h10v2zm0 8H7v-2h10v2z"/></svg>
+                💸 2. ค่าใช้จ่ายทั่วไป (52)
+            </button>
+            <button class="tab-btn" data-target="tab-twash">
+                <svg viewBox="0 0 24 24"><path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7h-2z"/></svg>
+                🔄 3. เงินยืม ที.วอช (27)
+            </button>
+            <button class="tab-btn" data-target="tab-debts">
+                <svg viewBox="0 0 24 24"><path d="M4 10v7h3v-7H4zm6 0v7h3v-7h-3zm6 0v7h3v-7h-3zM2 22h19v-3H2v3zm10-20L2 6v2h19V6l-9-4z"/></svg>
+                🏦 4. บัญชีหนี้กู้ยืม (8)
+            </button>
+            <button class="tab-btn" data-target="tab-vendors">
+                <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 3s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                👥 วิเคราะห์คู่ค้า & ผู้รับเงิน
+            </button>
+            <button class="tab-btn" data-target="tab-github" style="color:var(--accent-color); font-weight:700;">
+                <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                🚀 ลิ้งค์ GitHub อัตโนมัติ
+            </button>
+        </nav>
+
+        <!-- TAB 1: OVERVIEW & CASH FLOW -->
+        <section id="tab-overview" class="tab-content active">
+            <!-- Charts Row -->
+            <div class="dashboard-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                <div class="dashboard-card">
+                    <h2 style="display:flex; align-items:center; gap:0.5rem; font-size:1.15rem; color:var(--text-primary); margin-bottom:1rem;">
+                        <svg viewBox="0 0 24 24" style="width:20px; height:20px; fill:var(--accent-color);"><path d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z"/></svg>
+                        เปรียบเทียบกระแสเงินสดประจำงวด (Cash Flow Overview)
+                    </h2>
+                    <div style="height: 280px; position:relative;">
+                        <canvas id="cashflowBarChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <h2 style="display:flex; align-items:center; gap:0.5rem; font-size:1.15rem; color:var(--text-primary); margin-bottom:1rem;">
+                        <svg viewBox="0 0 24 24" style="width:20px; height:20px; fill:var(--accent-color);"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                        สัดส่วนค่าใช้จ่ายตามหมวดหมู่ (Expense Breakdown)
+                    </h2>
+                    <div style="height: 280px; position:relative;">
+                        <canvas id="expenseCategoryChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cash Flow Bridge Table -->
+            <div class="dashboard-card" style="margin-bottom: 1.5rem;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; flex-wrap:wrap; gap:0.5rem;">
+                    <h2 style="display:flex; align-items:center; gap:0.5rem; font-size:1.15rem; color:var(--text-primary);">
+                        <svg viewBox="0 0 24 24" style="width:20px; height:20px; fill:var(--accent-color);"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2zm0-4H7V7h10v2zm0 8H7v-2h10v2z"/></svg>
+                        ตารางกระทบยอดผลการดำเนินงานสู่กระแสเงินสด (Cash Flow Bridge Analysis)
+                    </h2>
+                    <span class="badge badge-muted">วิเคราะห์สภาพคล่องจริงเดือนกันยายน 2569</span>
+                </div>
+                
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>รายการกระทบยอดกระแสเงินสด (Cash Flow Bridge)</th>
+                                <th>ประเภทกระแสเงินสด</th>
+                                <th class="text-right">เงินสดเข้า (+)</th>
+                                <th class="text-right">เงินสดออก (-)</th>
+                                <th class="text-right">ยอดสุทธิ (บาท)</th>
+                                <th>หมายเหตุและคำอธิบาย</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bridge-table-body">
+                            <!-- Injected by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: REVENUE -->
+        <section id="tab-revenue" class="tab-content">
+            <div class="dashboard-card">
+                <div class="table-toolbar">
+                    <div style="display:flex; align-items:center; gap:0.75rem;">
+                        <div class="search-box">
+                            <svg viewBox="0 0 24 24" style="width:18px; height:18px; fill:var(--text-muted);"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                            <input type="text" id="rev-search" placeholder="ค้นหาลูกค้า หรือรายการขายไม้...">
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:1rem;">
+                        <span id="rev-table-count" style="font-weight:600; color:var(--text-secondary);">16 รายการ</span>
+                        <span id="rev-table-total" style="font-weight:700; color:var(--success-color); font-size:1.1rem;">฿284,175.00</span>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th class="text-center" style="width:60px;">ลำดับ</th>
+                                <th class="text-center" style="width:110px;">วันที่</th>
+                                <th class="text-center" style="width:90px;">เวลา</th>
+                                <th>รายการ / บันทึก</th>
+                                <th>ลูกค้า / ผู้โอนเงิน</th>
+                                <th>หมวดหมู่</th>
+                                <th class="text-right">จำนวนเงิน (บาท)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="rev-table-body">
+                            <!-- Injected by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: EXPENSES -->
+        <section id="tab-expenses" class="tab-content">
+            <div class="dashboard-card">
+                <div class="table-toolbar">
+                    <div style="display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;">
+                        <div class="search-box">
+                            <svg viewBox="0 0 24 24" style="width:18px; height:18px; fill:var(--text-muted);"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                            <input type="text" id="exp-search" placeholder="ค้นหาร้านค้า, ผู้รับเงิน, รายการ...">
+                        </div>
+                        <select id="exp-cat-filter" class="filter-select">
+                            <option value="">ทุกหมวดหมู่ค่าใช้จ่าย (ทั้งหมด)</option>
+                        </select>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:1rem;">
+                        <span id="exp-table-count" style="font-weight:600; color:var(--text-secondary);">52 รายการ</span>
+                        <span id="exp-table-total" style="font-weight:700; color:var(--danger-color); font-size:1.1rem;">฿352,372.62</span>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th class="text-center" style="width:60px;">ลำดับ</th>
+                                <th class="text-center" style="width:110px;">วันที่</th>
+                                <th class="text-center" style="width:90px;">เวลา</th>
+                                <th>รายการสั่งซื้อ / วัตถุประสงค์</th>
+                                <th>ผู้รับเงิน / ร้านค้า</th>
+                                <th>หมวดหมู่</th>
+                                <th class="text-right">จำนวนเงิน (บาท)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="exp-table-body">
+                            <!-- Injected by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 4: TWASH LOANS -->
+        <section id="tab-twash" class="tab-content">
+            <div class="dashboard-card">
+                <div class="table-toolbar">
+                    <div style="display:flex; align-items:center; gap:0.75rem;">
+                        <div class="search-box">
+                            <svg viewBox="0 0 24 24" style="width:18px; height:18px; fill:var(--text-muted);"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                            <input type="text" id="twash-search" placeholder="ค้นหารายการยืม ที.วอช...">
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:1rem;">
+                        <span id="twash-table-count" style="font-weight:600; color:var(--text-secondary);">27 รายการ</span>
+                        <span id="twash-table-total" style="font-weight:700; color:var(--accent-color); font-size:1.1rem;">฿169,069.61</span>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th class="text-center" style="width:60px;">ลำดับ</th>
+                                <th class="text-center" style="width:110px;">วันที่</th>
+                                <th class="text-center" style="width:90px;">เวลา</th>
+                                <th>รายการยืมเงิน</th>
+                                <th>ผู้เกี่ยวข้อง</th>
+                                <th class="text-center">ประเภท</th>
+                                <th class="text-right">จำนวนเงิน (บาท)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="twash-table-body">
+                            <!-- Injected by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 5: DEBTS & LIABILITIES -->
+        <section id="tab-debts" class="tab-content">
+            <div class="dashboard-card">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; flex-wrap:wrap; gap:0.5rem;">
+                    <h2 style="display:flex; align-items:center; gap:0.5rem; font-size:1.15rem; color:var(--text-primary);">
+                        <svg viewBox="0 0 24 24" style="width:20px; height:20px; fill:var(--accent-color);"><path d="M4 10v7h3v-7H4zm6 0v7h3v-7h-3zm6 0v7h3v-7h-3zM2 22h19v-3H2v3zm10-20L2 6v2h19V6l-9-4z"/></svg>
+                        สรุปภาระหนี้กู้ยืมและดอกเบี้ยคงค้างสะสม (Total Liabilities & Debt Obligations)
+                    </h2>
+                    <span class="badge badge-muted">กระทบยอดคงค้าง 8 บัญชี</span>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th class="text-center" style="width:60px;">ลำดับ</th>
+                                <th>ชื่อบัญชีเงินกู้ / รายการภาระหนี้</th>
+                                <th>ประเภทภาระผูกพัน</th>
+                                <th class="text-right">วงเงิน / ยอดยกมา</th>
+                                <th class="text-right">ดอกเบี้ยจ่ายงวดนี้</th>
+                                <th class="text-center">อัตราดอกเบี้ย</th>
+                                <th class="text-right">ยอดหนี้คงค้างสุทธิ</th>
+                                <th>หมายเหตุและเงื่อนไข</th>
+                            </tr>
+                        </thead>
+                        <tbody id="debt-table-body">
+                            <!-- Injected by JS -->
+                        </tbody>
+                        <tfoot>
+                            <tr style="background-color:var(--bg-secondary); font-weight:700;">
+                                <td colspan="4" class="text-center">รวมยอดภาระหนี้สินและดอกเบี้ยคงค้างทั้งหมด</td>
+                                <td class="text-right" id="debt-table-total-interest" style="color:#d84315;">฿12,000.00</td>
+                                <td></td>
+                                <td class="text-right" id="debt-table-total-balance" style="color:var(--danger-color); font-size:1.1rem;">฿1,982,746.36</td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 6: VENDORS -->
+        <section id="tab-vendors" class="tab-content">
+            <div class="dashboard-card">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; flex-wrap:wrap; gap:0.5rem;">
+                    <h2 style="display:flex; align-items:center; gap:0.5rem; font-size:1.15rem; color:var(--text-primary);">
+                        <svg viewBox="0 0 24 24" style="width:20px; height:20px; fill:var(--accent-color);"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 3s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                        จัดอันดับผู้รับเงินและคู่ค้ายอดชำระสูงสุด เดือนกันยายน 2569
+                    </h2>
+                    <span class="badge badge-muted">คำนวณสัดส่วนจากรายจ่ายรวม ฿352,372.62</span>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th class="text-center" style="width:80px;">อันดับ</th>
+                                <th>ชื่อผู้รับเงิน / ร้านค้า</th>
+                                <th class="text-right">ยอดชำระสะสม (บาท)</th>
+                                <th class="text-center" style="width:120px;">สัดส่วน (%)</th>
+                                <th style="width:240px;">แถบแสดงสัดส่วน</th>
+                            </tr>
+                        </thead>
+                        <tbody id="vendor-table-body">
+                            <!-- Injected by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 7: GITHUB ONLINE HOSTING ASSISTANT -->
+        <section id="tab-github" class="tab-content">
+            <div class="github-box">
+                <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1.5rem; flex-wrap:wrap;">
+                    <div style="width:56px; height:56px; background:#24292e; color:#fff; border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:1.8rem;">
+                        <svg viewBox="0 0 24 24" style="width:34px; height:34px; fill:currentColor;"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                    </div>
+                    <div>
+                        <h2 style="font-size:1.4rem; color:var(--text-primary); margin-bottom:0.25rem;">ระบบสร้างลิ้งค์ GitHub Pages และดูออนไลน์อัตโนมัติ</h2>
+                        <p style="color:var(--text-secondary); font-size:0.95rem;">เปิดให้ทุกคนดูรายงานงบการเงินเดือนกันยายน 2569 ผ่านเบราว์เซอร์ได้จากทุกอุปกรณ์ โดยไม่ต้องลงโปรแกรม</p>
+                    </div>
+                </div>
+
+                <!-- Input for username -->
+                <div style="background:#fff; border:1px solid var(--border-color); border-radius:var(--border-radius-md); padding:1.5rem; margin-bottom:1.5rem;">
+                    <label style="display:block; font-weight:700; color:var(--accent-color); margin-bottom:0.5rem; font-size:1rem;">
+                        👤 ใส่ชื่อบัญชี GitHub ของคุณ (GitHub Username):
+                    </label>
+                    <div style="display:flex; gap:1rem; align-items:center; flex-wrap:wrap;">
+                        <input type="text" id="gh-username-input" value="mtp-wood-thailand" style="padding:0.6rem 1rem; border:1px solid var(--border-color); border-radius:var(--border-radius-sm); font-size:1rem; font-family:inherit; min-width:260px; outline:none;" placeholder="เช่น mtp-wood-thailand">
+                        <span style="color:var(--text-muted); font-size:0.875rem;">(พิมพ์ชื่อแล้วลิงก์ด้านล่างจะอัปเดตอัตโนมัติทันที)</span>
+                    </div>
+
+                    <!-- Live URL Box -->
+                    <div style="margin-top:1.25rem; padding:1.25rem; background:var(--accent-light); border:1px dashed var(--accent-color); border-radius:var(--border-radius-sm);">
+                        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.5rem;">
+                            <span style="font-weight:700; color:var(--text-primary); font-size:0.95rem;">🌐 ลิ้งค์สำหรับดูออนไลน์จริง (Live GitHub Pages URL):</span>
+                            <span class="badge badge-success" style="font-size:0.75rem;">Active Target Link</span>
+                        </div>
+                        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+                            <a id="gh-preview-url" href="https://mtp-wood-thailand.github.io/mtp-wood-september-2026/" target="_blank" style="font-size:1.15rem; font-weight:700; color:var(--accent-color); word-break:break-all; text-decoration:none;">
+                                https://mtp-wood-thailand.github.io/mtp-wood-september-2026/
+                            </a>
+                            <button id="btn-copy-gh-link" class="btn btn-primary" style="padding:0.5rem 1.25rem; font-size:0.9rem;">
+                                📋 คัดลอกลิ้งค์
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 Easy Steps to Launch -->
+                <h3 style="font-size:1.15rem; color:var(--text-primary); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+                    🚀 3 ขั้นตอนการเปิดออนไลน์บน GitHub (ทำเสร็จใน 1 นาที):
+                </h3>
+                
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1rem; margin-bottom:1.5rem;">
+                    <div style="background:#fff; border:1px solid var(--border-color); border-radius:var(--border-radius-md); padding:1.25rem;">
+                        <h4 style="display:flex; align-items:center; color:var(--text-primary); margin-bottom:0.5rem;">
+                            <span class="step-num">1</span> สร้าง Repository บน GitHub
+                        </h4>
+                        <p style="font-size:0.875rem; color:var(--text-secondary); margin-bottom:1rem;">
+                            กดปุ่มด้านล่างเพื่อเปิดหน้าสร้าง Repository ตั้งชื่อ <code style="background:#eee; padding:2px 4px; border-radius:3px;">mtp-wood-september-2026</code> และเลือกเป็น <strong>Public</strong>
+                        </p>
+                        <a id="btn-open-gh-create" href="https://github.com/new?name=mtp-wood-september-2026&description=MTP+Wood+Thailand+-+September+2026+Financial+Dashboard&public=true" target="_blank" class="btn btn-outline" style="width:100%; text-align:center; font-size:0.85rem;">
+                            🌐 เปิดหน้าสร้าง Repo บน GitHub
+                        </a>
+                    </div>
+
+                    <div style="background:#fff; border:1px solid var(--border-color); border-radius:var(--border-radius-md); padding:1.25rem;">
+                        <h4 style="display:flex; align-items:center; color:var(--text-primary); margin-bottom:0.5rem;">
+                            <span class="step-num">2</span> ลากไฟล์วาง (Drag & Drop)
+                        </h4>
+                        <p style="font-size:0.875rem; color:var(--text-secondary); margin-bottom:1rem;">
+                            กด <strong>Upload files</strong> บนหน้า GitHub แล้วลากไฟล์ทั้งหมดในโฟลเดอร์ <code style="background:#eee; padding:2px 4px; border-radius:3px;">MTP_WOOD_September_2026</code> (index.html, data.js, style.css, app.js) ไปวาง แล้วกด <strong>Commit changes</strong>
+                        </p>
+                        <span class="badge badge-muted" style="display:block; text-align:center;">ไม่ต้องพิมพ์คำสั่งใดๆ</span>
+                    </div>
+
+                    <div style="background:#fff; border:1px solid var(--border-color); border-radius:var(--border-radius-md); padding:1.25rem;">
+                        <h4 style="display:flex; align-items:center; color:var(--text-primary); margin-bottom:0.5rem;">
+                            <span class="step-num">3</span> เปิดใช้งาน GitHub Pages
+                        </h4>
+                        <p style="font-size:0.875rem; color:var(--text-secondary); margin-bottom:1rem;">
+                            ไปที่แท็บ <strong>Settings</strong> -> เมนู <strong>Pages</strong> ด้านซ้าย -> ตรง Source เลือก <strong>Deploy from a branch</strong> -> เลือก branch <strong>main / root</strong> แล้วกด <strong>Save</strong>
+                        </p>
+                        <span class="badge badge-success" style="display:block; text-align:center;">ออนไลน์ดูได้ทั่วโลกทันที!</span>
+                    </div>
+                </div>
+
+                <!-- Terminal / CLI snippet -->
+                <div style="margin-top:1.5rem;">
+                    <h4 style="font-size:0.95rem; color:var(--text-primary); margin-bottom:0.5rem;">💻 หรือสำหรับผู้ที่ใช้ Git Command Line / PowerShell:</h4>
+                    <pre class="code-pre" id="gh-cli-snippet"></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="margin-top:2rem; padding:1.5rem; text-align:center; color:var(--text-muted); font-size:0.875rem; border-top:1px solid var(--border-color);">
+            บริษัท เอ็มทีพี วูด จำกัด (MTP Wood Thailand) • รายงานสรุปงบการเงินประจำเดือน กันยายน 2569 • 100% Offline & Online Ready
+        </footer>
+    </div>
+
+    <!-- Data & Script -->
+    <script>
+// MTP Wood Thailand - September 2026 Financial Dataset
+window.SEP_2026_DATA = {
+    meta: {
+        month: "กันยายน 2569",
+        monthEn: "September 2026",
+        yearTh: 2569,
+        yearEn: 2026,
+        status: "ปิดงบสมบูรณ์ (Closed Ledger)",
+        totalRevenue: 284175.0,
+        totalExpenses: 352372.62,
+        netProfit: -68197.62,
+        totalTwashLoan: 169069.61,
+        totalLiabilities: 1982746.3599999999,
+        interestPaidThisMonth: 12000.0,
+        revenueCount: 16,
+        expenseCount: 52,
+        twashCount: 27,
+        debtCount: 8
+    },
+    revenue: [
+  {
+    "no": 1,
+    "date": "2026-09-01",
+    "time": "13:04:00",
+    "desc": "รับโอนเงินค่าไม้",
+    "client": "นาย อุดมเลิศ พฤกษ์ภัทรกุล",
+    "cat": "MTP รายรับ",
+    "amt": 20000.0
+  },
+  {
+    "no": 2,
+    "date": "2026-09-05",
+    "time": "13:55:00",
+    "desc": "ขายไม้ บิล 10/0310",
+    "client": "นาง พรรณี พ.",
+    "cat": "MTP รายรับ",
+    "amt": 9500.0
+  },
+  {
+    "no": 3,
+    "date": "2026-09-05",
+    "time": "14:00:00",
+    "desc": "ขายไม้ บิล 07/0313",
+    "client": "บิลเงินสด มานพ",
+    "cat": "MTP รายรับ",
+    "amt": 12000.0
+  },
+  {
+    "no": 4,
+    "date": "2026-09-08",
+    "time": "21:59:00",
+    "desc": "รับโอนเงินค่าสินค้า",
+    "client": "หจก. วิภพลาภิน",
+    "cat": "MTP รายรับ",
+    "amt": 22000.0
+  },
+  {
+    "no": 5,
+    "date": "2026-09-10",
+    "time": "17:01:00",
+    "desc": "รับโอนเงินค่าสินค้า",
+    "client": "น.ส. ยุพเรศ อ.",
+    "cat": "MTP รายรับ",
+    "amt": 1980.0
+  },
+  {
+    "no": 6,
+    "date": "2026-09-16",
+    "time": "16:01:00",
+    "desc": "รับโอนเงินค่าไม้ บิล 07/0315",
+    "client": "นาย อุดมเลิศ พฤกษ์ภัทรกุล",
+    "cat": "MTP รายรับ",
+    "amt": 10000.0
+  },
+  {
+    "no": 7,
+    "date": "2026-09-17",
+    "time": "15:51:00",
+    "desc": "ขายไม้บิล 03/0101",
+    "client": "นาย ภักดี ต. (ที่นี่มีดีไซน์)",
+    "cat": "จามจุรีย์ รายรับ",
+    "amt": 4550.0
+  },
+  {
+    "no": 8,
+    "date": "2026-09-18",
+    "time": "06:56:00",
+    "desc": "รับโอนเงินค่าส่งลำปาง",
+    "client": "NARAWUT PONGL",
+    "cat": "MTP รายรับ",
+    "amt": 40000.0
+  },
+  {
+    "no": 9,
+    "date": "2026-09-23",
+    "time": "12:08:00",
+    "desc": "รับโอนเงินค่าไม้ บิล 23/9/69",
+    "client": "NARAWUT PONGL",
+    "cat": "MTP รายรับ",
+    "amt": 21100.0
+  },
+  {
+    "no": 10,
+    "date": "2026-09-23",
+    "time": "15:20:00",
+    "desc": "ขายไม้ บิล 10/0491",
+    "client": "นาง พรรณี พ.",
+    "cat": "MTP รายรับ",
+    "amt": 24900.0
+  },
+  {
+    "no": 11,
+    "date": "2026-09-25",
+    "time": "12:00:00",
+    "desc": "ขายไม้ บิล 10/0492",
+    "client": "ใบส่งของ ส.ไผ่งาม",
+    "cat": "MTP รายรับ",
+    "amt": 7700.0
+  },
+  {
+    "no": 12,
+    "date": "2026-09-26",
+    "time": "16:13:00",
+    "desc": "ขายไม้ บิล 10/0493",
+    "client": "นาง พรรณี พ.",
+    "cat": "MTP รายรับ",
+    "amt": 25800.0
+  },
+  {
+    "no": 13,
+    "date": "2026-09-29",
+    "time": "16:36:00",
+    "desc": "รับโอนเงินค่าสินค้า",
+    "client": "MR. WICHOT",
+    "cat": "MTP รายรับ",
+    "amt": 3150.0
+  },
+  {
+    "no": 14,
+    "date": "2026-10-01",
+    "time": "14:31:00",
+    "desc": "รับโอนเงินค่าไม้",
+    "client": "ร้อยตำรวจเอก พุทธิพงษ์",
+    "cat": "MTP รายรับ",
+    "amt": 20000.0
+  },
+  {
+    "no": 15,
+    "date": "2026-10-01",
+    "time": "14:32:00",
+    "desc": "ขายไม้ บิล 10/0498",
+    "client": "นาง พรรณี พ.",
+    "cat": "MTP รายรับ",
+    "amt": 11500.0
+  },
+  {
+    "no": 16,
+    "date": "2026-10-01",
+    "time": "15:31:00",
+    "desc": "รับโอนเงินค่าสินค้า",
+    "client": "น.ส. เจนจิรา",
+    "cat": "MTP รายรับ",
+    "amt": 49995.0
+  }
+],
+    expenses: [
+  {
+    "no": 1,
+    "date": "2026-09-01",
+    "time": "12:09:00",
+    "desc": "ค่าไม้",
+    "payee": "นาย เสถียร จันทรนวล",
+    "cat": "ค่าไม้",
+    "amt": 6289.0
+  },
+  {
+    "no": 2,
+    "date": "2026-09-01",
+    "time": "14:36:00",
+    "desc": "ดอกเบี้ย เงินกู้ เดือน 8 ปี 69",
+    "payee": "นาย แสวง ทองคำ",
+    "cat": "ดอกเบี้ยเงินกู้",
+    "amt": 7500.0
+  },
+  {
+    "no": 3,
+    "date": "2026-09-02",
+    "time": "03:53:00",
+    "desc": "ค่าดอกเบี้ยยืมเงิน 3 แสน (บ.วัน)",
+    "payee": "น.ส. ผนิสา คงอ่ำ",
+    "cat": "ดอกเบี้ยเงินกู้",
+    "amt": 4500.0
+  },
+  {
+    "no": 4,
+    "date": "2026-09-02",
+    "time": "14:11:00",
+    "desc": "ค่าต่อใบอนุญาต (ทส.จ)",
+    "payee": "นาง สุกัลยา จันต๊ะอิน",
+    "cat": "ค่าธรรมเนียม/ใบอนุญาต",
+    "amt": 20000.0
+  },
+  {
+    "no": 5,
+    "date": "2026-09-03",
+    "time": "17:16:00",
+    "desc": "ค่าน้ำมัน",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าน้ำมัน",
+    "amt": 2000.0
+  },
+  {
+    "no": 6,
+    "date": "2026-09-04",
+    "time": "09:41:00",
+    "desc": "ซื้อไม้",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าไม้",
+    "amt": 3000.0
+  },
+  {
+    "no": 7,
+    "date": "2026-09-05",
+    "time": "16:39:00",
+    "desc": "ค่าไม้",
+    "payee": "นาย เสถียร จันทรนวล",
+    "cat": "ค่าไม้",
+    "amt": 6120.0
+  },
+  {
+    "no": 8,
+    "date": "2026-09-05",
+    "time": "18:09:00",
+    "desc": "คนงานเบิก (2,500) + หินเจีย (2,000)",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าแรง/อุปกรณ์",
+    "amt": 4500.0
+  },
+  {
+    "no": 9,
+    "date": "2026-09-07",
+    "time": "10:53:00",
+    "desc": "ค่าน้ำมัน",
+    "payee": "นาง วิลาวัลย์ ปัจจวงศ์",
+    "cat": "ค่าน้ำมัน",
+    "amt": 500.0
+  },
+  {
+    "no": 10,
+    "date": "2026-09-07",
+    "time": "12:34:00",
+    "desc": "สำรองจ่าย",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "สำรองจ่าย",
+    "amt": 2000.0
+  },
+  {
+    "no": 11,
+    "date": "2026-09-07",
+    "time": "16:10:00",
+    "desc": "ค่าไม้",
+    "payee": "นาย วรรณพงศ์ เทพเกษร",
+    "cat": "ค่าไม้",
+    "amt": 1335.0
+  },
+  {
+    "no": 12,
+    "date": "2026-09-07",
+    "time": "16:17:00",
+    "desc": "ซื้อไม้",
+    "payee": "นาย เสถียร จันทร์นวล",
+    "cat": "ค่าไม้",
+    "amt": 2380.0
+  },
+  {
+    "no": 13,
+    "date": "2026-09-07",
+    "time": "16:28:00",
+    "desc": "ซื้อลูกหมู",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "อุปกรณ์",
+    "amt": 1800.0
+  },
+  {
+    "no": 14,
+    "date": "2026-09-08",
+    "time": "10:31:00",
+    "desc": "ค่าน้ำมัน",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าน้ำมัน",
+    "amt": 1500.0
+  },
+  {
+    "no": 15,
+    "date": "2026-09-08",
+    "time": "15:15:00",
+    "desc": "ซ่อมเครน",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าซ่อมแซม",
+    "amt": 1000.0
+  },
+  {
+    "no": 16,
+    "date": "2026-09-08",
+    "time": "17:23:00",
+    "desc": "ค่าน้ำมัน",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าน้ำมัน",
+    "amt": 2000.0
+  },
+  {
+    "no": 17,
+    "date": "2026-09-09",
+    "time": "14:30:00",
+    "desc": "ไม้น้ำฉา",
+    "payee": "นาย ชาติชาย คำสงค์",
+    "cat": "ค่าไม้",
+    "amt": 4128.0
+  },
+  {
+    "no": 18,
+    "date": "2026-09-09",
+    "time": "16:06:00",
+    "desc": "ซื้อไม้",
+    "payee": "นาย เสถียร จันทรนวล",
+    "cat": "ค่าไม้",
+    "amt": 1710.0
+  },
+  {
+    "no": 19,
+    "date": "2026-09-10",
+    "time": "10:31:00",
+    "desc": "ค่าเหล็ก",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "อุปกรณ์/เหล็ก",
+    "amt": 2000.0
+  },
+  {
+    "no": 20,
+    "date": "2026-09-10",
+    "time": "13:18:00",
+    "desc": "ค่าเหล็ก",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "อุปกรณ์/เหล็ก",
+    "amt": 1000.0
+  },
+  {
+    "no": 21,
+    "date": "2026-09-11",
+    "time": "08:39:00",
+    "desc": "อะไหล่ซ่อมรถ",
+    "payee": "น.ส. สุจิตรา หลวงตัน",
+    "cat": "ค่าซ่อมแซม",
+    "amt": 8161.0
+  },
+  {
+    "no": 22,
+    "date": "2026-09-12",
+    "time": "08:46:00",
+    "desc": "ค่าน้ำมัน",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าน้ำมัน",
+    "amt": 4000.0
+  },
+  {
+    "no": 23,
+    "date": "2026-09-12",
+    "time": "17:02:00",
+    "desc": "คนงานเบิกเงิน",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าแรงงาน",
+    "amt": 6500.0
+  },
+  {
+    "no": 24,
+    "date": "2026-09-13",
+    "time": "08:18:00",
+    "desc": "ซื้อมอเตอร์",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "อุปกรณ์/มอเตอร์",
+    "amt": 7000.0
+  },
+  {
+    "no": 25,
+    "date": "2026-09-15",
+    "time": "15:09:00",
+    "desc": "ค่าน้ำมัน",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าน้ำมัน",
+    "amt": 3000.0
+  },
+  {
+    "no": 26,
+    "date": "2026-09-16",
+    "time": "16:44:00",
+    "desc": "ค่าแรงงานงวด 1-15 ก.ย. 69 (ส่วนจ่ายตรง)",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าแรงงาน",
+    "amt": 49830.0
+  },
+  {
+    "no": 27,
+    "date": "2026-09-18",
+    "time": "11:10:00",
+    "desc": "ค่าไม้น้ำฉา",
+    "payee": "นาย ชาติชาย คำสงค์",
+    "cat": "ค่าไม้",
+    "amt": 23622.0
+  },
+  {
+    "no": 28,
+    "date": "2026-09-18",
+    "time": "15:57:00",
+    "desc": "ค่าไม้",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าไม้",
+    "amt": 2725.0
+  },
+  {
+    "no": 29,
+    "date": "2026-09-18",
+    "time": "16:59:00",
+    "desc": "ค่าไม้",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าไม้",
+    "amt": 3500.0
+  },
+  {
+    "no": 30,
+    "date": "2026-09-19",
+    "time": "10:51:00",
+    "desc": "ค่าน้ำมัน",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าน้ำมัน",
+    "amt": 3000.0
+  },
+  {
+    "no": 31,
+    "date": "2026-09-19",
+    "time": "18:40:00",
+    "desc": "ค่าไม้",
+    "payee": "นาย ทองคำ กะทง",
+    "cat": "ค่าไม้",
+    "amt": 2535.0
+  },
+  {
+    "no": 32,
+    "date": "2026-09-20",
+    "time": "08:07:00",
+    "desc": "คืนค่าไฟฟ้าโรงเลื่อย",
+    "payee": "นาย ธนวัฏ และ น.ส. ยุพเรศ",
+    "cat": "ค่าไฟฟ้า",
+    "amt": 6000.0
+  },
+  {
+    "no": 33,
+    "date": "2026-09-21",
+    "time": "17:18:00",
+    "desc": "ค่าไฟฟ้าส่วนภูมิภาค",
+    "payee": "การไฟฟ้าส่วนภูมิภาค",
+    "cat": "ค่าไฟฟ้า",
+    "amt": 7063.62
+  },
+  {
+    "no": 34,
+    "date": "2026-09-23",
+    "time": "09:56:00",
+    "desc": "ค่าน้ำมัน",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าน้ำมัน",
+    "amt": 2000.0
+  },
+  {
+    "no": 35,
+    "date": "2026-09-23",
+    "time": "16:59:00",
+    "desc": "ค่าไม้",
+    "payee": "นาย ตา ทะนนท์",
+    "cat": "ค่าไม้",
+    "amt": 2900.0
+  },
+  {
+    "no": 36,
+    "date": "2026-09-23",
+    "time": "17:00:00",
+    "desc": "ค่าไม้",
+    "payee": "นาย ตา ทะนนท์",
+    "cat": "ค่าไม้",
+    "amt": 3600.0
+  },
+  {
+    "no": 37,
+    "date": "2026-09-23",
+    "time": "18:33:00",
+    "desc": "ค่าเช่า (ก.ค. - ส.ค. 69)",
+    "payee": "นาง จันทร์ฟอง ติ๊บมา",
+    "cat": "ค่าเช่า",
+    "amt": 6000.0
+  },
+  {
+    "no": 38,
+    "date": "2026-09-24",
+    "time": "08:19:00",
+    "desc": "สำรองจ่ายค่าน้ำมัน",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าน้ำมัน",
+    "amt": 5000.0
+  },
+  {
+    "no": 39,
+    "date": "2026-09-24",
+    "time": "08:20:00",
+    "desc": "คืนค่าไฟส่วนตัว",
+    "payee": "นาย ธนวัฏ และ น.ส. ยุพเรศ",
+    "cat": "ค่าไฟฟ้า",
+    "amt": 7064.0
+  },
+  {
+    "no": 40,
+    "date": "2026-09-25",
+    "time": "11:36:00",
+    "desc": "คืนเงิน ทส.จ เชียงราย",
+    "payee": "นาย ธนวัฏ และ น.ส. ยุพเรศ",
+    "cat": "ค่าธรรมเนียม/ใบอนุญาต",
+    "amt": 2750.0
+  },
+  {
+    "no": 41,
+    "date": "2026-09-25",
+    "time": "13:21:00",
+    "desc": "ค่าน้ำมัน",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าน้ำมัน",
+    "amt": 3000.0
+  },
+  {
+    "no": 42,
+    "date": "2026-09-26",
+    "time": "15:36:00",
+    "desc": "คนงานเบิกเงิน",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าแรงงาน",
+    "amt": 7000.0
+  },
+  {
+    "no": 43,
+    "date": "2026-09-27",
+    "time": "09:03:00",
+    "desc": "ค่าไม้มะม่วง",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าไม้",
+    "amt": 9760.0
+  },
+  {
+    "no": 44,
+    "date": "2026-09-28",
+    "time": "08:42:00",
+    "desc": "ค่ารถสิบล้อ",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าขนส่ง/เครื่องจักร",
+    "amt": 20700.0
+  },
+  {
+    "no": 45,
+    "date": "2026-09-28",
+    "time": "08:44:00",
+    "desc": "ค่าน้ำมัน",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าน้ำมัน",
+    "amt": 2000.0
+  },
+  {
+    "no": 46,
+    "date": "2026-09-29",
+    "time": "11:00:00",
+    "desc": "ค่าน้ำมัน",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าน้ำมัน",
+    "amt": 3000.0
+  },
+  {
+    "no": 47,
+    "date": "2026-09-30",
+    "time": "08:08:00",
+    "desc": "ดอกเบี้ยทอง",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ดอกเบี้ย",
+    "amt": 5200.0
+  },
+  {
+    "no": 48,
+    "date": "2026-09-30",
+    "time": "13:28:00",
+    "desc": "จ่ายดอกทอง",
+    "payee": "น.ส. จุฑาทิพย์ เจริญสุวรรณ์",
+    "cat": "ดอกเบี้ย",
+    "amt": 5200.0
+  },
+  {
+    "no": 49,
+    "date": "2026-09-30",
+    "time": "16:05:00",
+    "desc": "ค่าน้ำมัน",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าน้ำมัน",
+    "amt": 3000.0
+  },
+  {
+    "no": 50,
+    "date": "2026-10-01",
+    "time": "14:50:00",
+    "desc": "ดอกเบี้ยเงินกู้บริษัทวัน",
+    "payee": "น.ส. ผนิสา คงอ่ำ",
+    "cat": "ดอกเบี้ยเงินกู้",
+    "amt": 4500.0
+  },
+  {
+    "no": 51,
+    "date": "2026-10-01",
+    "time": "14:58:00",
+    "desc": "ดอกเบี้ยเงินกู้ คุณอาแสวง เดือน 9.2026",
+    "payee": "นาย แสวง ทองคำ",
+    "cat": "ดอกเบี้ยเงินกู้",
+    "amt": 7500.0
+  },
+  {
+    "no": 52,
+    "date": "2026-10-01",
+    "time": "16:48:00",
+    "desc": "ค่าแรง 16-30 ก.ย. 69 (ส่วนจ่ายโอน)",
+    "payee": "นาย มัสถชัย คำอ้าย",
+    "cat": "ค่าแรงงาน",
+    "amt": 50000.0
+  }
+],
+    twashLoans: [
+  {
+    "no": 1,
+    "date": "2026-09-01",
+    "time": "13:58:00",
+    "desc": "ยืม ที.วอช (ค่าแรง)",
+    "party": "บจก. เอ็มทีพี วูด (ไทยแลนด์)",
+    "type": "ยืมเงิน",
+    "amt": 10000.0
+  },
+  {
+    "no": 2,
+    "date": "2026-09-02",
+    "time": "03:53:00",
+    "desc": "ยืม ที.วอช ชร (จ่ายดอก บ.วัน)",
+    "party": "น.ส. ผนิสา คงอ่ำ",
+    "type": "ยืมเงิน",
+    "amt": 4500.0
+  },
+  {
+    "no": 3,
+    "date": "2026-09-02",
+    "time": "14:11:00",
+    "desc": "ยืม ที.วอช ชร (ต่อใบอนุญาต)",
+    "party": "นาง สุกัลยา จันต๊ะอิน",
+    "type": "ยืมเงิน",
+    "amt": 20000.0
+  },
+  {
+    "no": 4,
+    "date": "2026-09-03",
+    "time": "17:16:00",
+    "desc": "ยืม ที.วอช ชร (ค่าน้ำมัน)",
+    "party": "นาย มัสถชัย คำอ้าย",
+    "type": "ยืมเงิน",
+    "amt": 2000.0
+  },
+  {
+    "no": 5,
+    "date": "2026-09-04",
+    "time": "09:41:00",
+    "desc": "ยืม ที.วอช ชร (ซื้อไม้)",
+    "party": "นาย มัสถชัย คำอ้าย",
+    "type": "ยืมเงิน",
+    "amt": 3000.0
+  },
+  {
+    "no": 6,
+    "date": "2026-09-05",
+    "time": "18:09:00",
+    "desc": "ยืม ที.วอช ชร (คนงานเบิก+หินเจีย)",
+    "party": "นาย มัสถชัย คำอ้าย",
+    "type": "ยืมเงิน",
+    "amt": 4500.0
+  },
+  {
+    "no": 7,
+    "date": "2026-09-07",
+    "time": "16:10:00",
+    "desc": "ยืม ที.วอช ชร (ค่าไม้)",
+    "party": "นาย วรรณพงศ์ เทพเกษร",
+    "type": "ยืมเงิน",
+    "amt": 1335.0
+  },
+  {
+    "no": 8,
+    "date": "2026-09-07",
+    "time": "16:17:00",
+    "desc": "ยืม ที.วอช ชร (ซื้อไม้)",
+    "party": "นาย เสถียร จันทร์นวล",
+    "type": "ยืมเงิน",
+    "amt": 2380.0
+  },
+  {
+    "no": 9,
+    "date": "2026-09-07",
+    "time": "16:28:00",
+    "desc": "ยืม ที.วอช ชร (ลูกหมู)",
+    "party": "นาย มัสถชัย คำอ้าย",
+    "type": "ยืมเงิน",
+    "amt": 1800.0
+  },
+  {
+    "no": 10,
+    "date": "2026-09-08",
+    "time": "10:31:00",
+    "desc": "ยืม ที.วอช ชร (ค่าน้ำมัน)",
+    "party": "นาย มัสถชัย คำอ้าย",
+    "type": "ยืมเงิน",
+    "amt": 1500.0
+  },
+  {
+    "no": 11,
+    "date": "2026-09-08",
+    "time": "17:23:00",
+    "desc": "ยืม ที.วอช ชร (ค่าน้ำมัน)",
+    "party": "นาย มัสถชัย คำอ้าย",
+    "type": "ยืมเงิน",
+    "amt": 2000.0
+  },
+  {
+    "no": 12,
+    "date": "2026-09-09",
+    "time": "07:42:00",
+    "desc": "คืน ที.วอช ชร",
+    "party": "บจก. เอ็มทีพี วูด โอนคืน",
+    "type": "คืนเงิน",
+    "amt": 0.0
+  },
+  {
+    "no": 13,
+    "date": "2026-09-09",
+    "time": "14:30:00",
+    "desc": "ยืม ที.วอช ชร (ไม้น้ำฉา)",
+    "party": "นาย ชาติชาย คำสงค์",
+    "type": "ยืมเงิน",
+    "amt": 4128.0
+  },
+  {
+    "no": 14,
+    "date": "2026-09-10",
+    "time": "10:31:00",
+    "desc": "ยืม ที.วอช ชร (ค่าเหล็ก)",
+    "party": "นาย มัสถชัย คำอ้าย",
+    "type": "ยืมเงิน",
+    "amt": 2000.0
+  },
+  {
+    "no": 15,
+    "date": "2026-09-10",
+    "time": "13:18:00",
+    "desc": "ยืม ที.วอช ชร (ค่าเหล็ก)",
+    "party": "นาย มัสถชัย คำอ้าย",
+    "type": "ยืมเงิน",
+    "amt": 1000.0
+  },
+  {
+    "no": 16,
+    "date": "2026-09-11",
+    "time": "08:39:00",
+    "desc": "ยืม ที.วอช ชร (อะไหล่ซ่อมรถ)",
+    "party": "น.ส. สุจิตรา หลวงตัน",
+    "type": "ยืมเงิน",
+    "amt": 8161.0
+  },
+  {
+    "no": 17,
+    "date": "2026-09-12",
+    "time": "08:46:00",
+    "desc": "ยืม ที.วอช ชร (ค่าน้ำมัน)",
+    "party": "นาย มัสถชัย คำอ้าย",
+    "type": "ยืมเงิน",
+    "amt": 4000.0
+  },
+  {
+    "no": 18,
+    "date": "2026-09-12",
+    "time": "17:02:00",
+    "desc": "ยืม ที.วอช ชร (คนงานเบิก)",
+    "party": "นาย มัสถชัย คำอ้าย",
+    "type": "ยืมเงิน",
+    "amt": 6500.0
+  },
+  {
+    "no": 19,
+    "date": "2026-09-13",
+    "time": "08:18:00",
+    "desc": "ยืม ที.วอช ชร (ซื้อมอเตอร์)",
+    "party": "นาย มัสถชัย คำอ้าย",
+    "type": "ยืมเงิน",
+    "amt": 7000.0
+  },
+  {
+    "no": 20,
+    "date": "2026-09-16",
+    "time": "16:39:00",
+    "desc": "ยืม ที.วอช เชียงใหม่ (ค่าแรง 1-15)",
+    "party": "บจก. เอ็มทีพี วูด (ไทยแลนด์)",
+    "type": "ยืมเงิน",
+    "amt": 30000.0
+  },
+  {
+    "no": 21,
+    "date": "2026-09-20",
+    "time": "08:06:00",
+    "desc": "ยืม ที.วอช ชร (ค่าไฟฟ้า)",
+    "party": "การไฟฟ้าส่วนภูมิภาค",
+    "type": "ยืมเงิน",
+    "amt": 10201.99
+  },
+  {
+    "no": 22,
+    "date": "2026-09-20",
+    "time": "08:07:00",
+    "desc": "คืนเงินค่าไฟฟ้า ที.วอช",
+    "party": "บจก. เอ็มทีพี วูด โอนคืน",
+    "type": "คืนเงิน",
+    "amt": 0.0
+  },
+  {
+    "no": 23,
+    "date": "2026-09-20",
+    "time": "08:14:00",
+    "desc": "ยืมเงินส่วนตัวพี่ท็อป",
+    "party": "นาย มัสถชัย คำอ้าย",
+    "type": "ยืมเงิน",
+    "amt": 30000.0
+  },
+  {
+    "no": 24,
+    "date": "2026-09-21",
+    "time": "17:18:00",
+    "desc": "ยืมส่วนตัวพี่ท็อป (ค่าไฟฟ้า)",
+    "party": "การไฟฟ้าส่วนภูมิภาค",
+    "type": "ยืมเงิน",
+    "amt": 7063.62
+  },
+  {
+    "no": 25,
+    "date": "2026-09-24",
+    "time": "08:20:00",
+    "desc": "คืนเงินค่าไฟ ที.วอช",
+    "party": "บจก. เอ็มทีพี วูด โอนคืน",
+    "type": "คืนเงิน",
+    "amt": 0.0
+  },
+  {
+    "no": 26,
+    "date": "2026-09-30",
+    "time": "16:05:00",
+    "desc": "ยืม ที.วอช ชร (ค่าน้ำมัน)",
+    "party": "นาย มัสถชัย คำอ้าย",
+    "type": "ยืมเงิน",
+    "amt": 3000.0
+  },
+  {
+    "no": 27,
+    "date": "2026-10-03",
+    "time": "10:31:00",
+    "desc": "ยืม ที.วอช (ค่าน้ำมัน)",
+    "party": "นาย มัสถชัย คำอ้าย",
+    "type": "ยืมเงิน",
+    "amt": 3000.0
+  }
+],
+    debts: [
+  {
+    "no": 1,
+    "name": "เงินกู้ คุณอาแสวง (A-Sawaeng Loan)",
+    "type": "เงินกู้ยืมระยะยาว",
+    "principal": 500000.0,
+    "interestPaid": 7500.0,
+    "interestRate": "1.5% ต่อเดือน",
+    "balance": 500000.0,
+    "remarks": "จ่ายดอกเบี้ยครบงวดที่ 13 (7,500 บาท) เงินต้นคงค้าง 500,000 บาท"
+  },
+  {
+    "no": 2,
+    "name": "เงินกู้ บริษัท วัน จำกัด (Wan Co. Loan)",
+    "type": "เงินกู้ยืมระยะยาว",
+    "principal": 300000.0,
+    "interestPaid": 4500.0,
+    "interestRate": "1.5% ต่อเดือน",
+    "balance": 300000.0,
+    "remarks": "จ่ายดอกเบี้ยงวดเดือน 9 เรียบร้อย (4,500 บาท) เงินต้นคงค้าง 300,000 บาท"
+  },
+  {
+    "no": 3,
+    "name": "เงินยืม ที.วอช เชียงราย (T.Wash Revolving)",
+    "type": "เงินยืมหมุนเวียนกิจการ",
+    "principal": 1194352.73,
+    "interestPaid": 0.0,
+    "interestRate": "-",
+    "balance": 923750.73,
+    "remarks": "ยืมสะสมรวมถึง ก.ย. 69 หักชำระคืนคงเหลือยอดค้างสุทธิ 923,750.73 บ. (ยอดคงค้างตามรายงานเดิม 230,005 บ.)"
+  },
+  {
+    "no": 4,
+    "name": "เงินสำรองจ่าย พี่มัด (P'Mud Advances)",
+    "type": "เงินสำรองจ่ายหน้างาน",
+    "principal": 168995.63,
+    "interestPaid": 0.0,
+    "interestRate": "-",
+    "balance": 112995.63,
+    "remarks": "สำรองจ่ายหน้างาน 168,995.63 บ. คืนแล้ว 56,000 บ. ค้างจ่ายคืน 112,995.63 บ."
+  },
+  {
+    "no": 5,
+    "name": "เงินกู้กองทุนหมู่บ้าน",
+    "type": "ภาระหนี้/กองทุน",
+    "principal": 70000.0,
+    "interestPaid": 0.0,
+    "interestRate": "ตามข้อตกลง",
+    "balance": 70000.0,
+    "remarks": "ภาระเงินกู้ยืมกองทุนหมู่บ้าน"
+  },
+  {
+    "no": 6,
+    "name": "เงินยืม ที.วอช สาขาเชียงใหม่",
+    "type": "ภาระคงค้างภายนอก",
+    "principal": 30000.0,
+    "interestPaid": 0.0,
+    "interestRate": "-",
+    "balance": 30000.0,
+    "remarks": "ยืมหมุนเวียน ที.วอช ชม. (กำหนดขอคืนวันที่ 20 ก.ย.)"
+  },
+  {
+    "no": 7,
+    "name": "หนี้ค้างคืน 5%",
+    "type": "ภาระหนี้/เงินกู้",
+    "principal": 50000.0,
+    "interestPaid": 0.0,
+    "interestRate": "5%",
+    "balance": 10000.0,
+    "remarks": "ยืม 50,000 บ. ชำระแล้ว 40,000 บ. คงเหลือ 10,000 บ."
+  },
+  {
+    "no": 8,
+    "name": "เงินส่วนตัวสำรองหน้างาน",
+    "type": "เงินส่วนตัว",
+    "principal": 36000.0,
+    "interestPaid": 0.0,
+    "interestRate": "-",
+    "balance": 36000.0,
+    "remarks": "ก้อนที่ 1 (30,000 บ. ขอคืนวันที่ 25) + ก้อนที่ 2 (6,000 บ.)"
+  }
+],
+    categories: [
+  {
+    "name": "ค่าแรงงาน",
+    "total": 113330.0,
+    "pct": 32.2
+  },
+  {
+    "name": "ค่าไม้",
+    "total": 73604.0,
+    "pct": 20.9
+  },
+  {
+    "name": "ค่าน้ำมัน",
+    "total": 34000.0,
+    "pct": 9.6
+  },
+  {
+    "name": "ดอกเบี้ยเงินกู้",
+    "total": 24000.0,
+    "pct": 6.8
+  },
+  {
+    "name": "ค่าธรรมเนียม/ใบอนุญาต",
+    "total": 22750.0,
+    "pct": 6.5
+  },
+  {
+    "name": "ค่าขนส่ง/เครื่องจักร",
+    "total": 20700.0,
+    "pct": 5.9
+  },
+  {
+    "name": "ค่าไฟฟ้า",
+    "total": 20127.62,
+    "pct": 5.7
+  },
+  {
+    "name": "ดอกเบี้ย",
+    "total": 10400.0,
+    "pct": 3.0
+  },
+  {
+    "name": "ค่าซ่อมแซม",
+    "total": 9161.0,
+    "pct": 2.6
+  },
+  {
+    "name": "อุปกรณ์/มอเตอร์",
+    "total": 7000.0,
+    "pct": 2.0
+  },
+  {
+    "name": "ค่าเช่า",
+    "total": 6000.0,
+    "pct": 1.7
+  },
+  {
+    "name": "ค่าแรง/อุปกรณ์",
+    "total": 4500.0,
+    "pct": 1.3
+  },
+  {
+    "name": "อุปกรณ์/เหล็ก",
+    "total": 3000.0,
+    "pct": 0.9
+  },
+  {
+    "name": "สำรองจ่าย",
+    "total": 2000.0,
+    "pct": 0.6
+  },
+  {
+    "name": "อุปกรณ์",
+    "total": 1800.0,
+    "pct": 0.5
+  }
+],
+    topPayees: [
+  {
+    "name": "นาย มัสถชัย คำอ้าย",
+    "total": 211015.0,
+    "pct": 59.9
+  },
+  {
+    "name": "นาย ชาติชาย คำสงค์",
+    "total": 27750.0,
+    "pct": 7.9
+  },
+  {
+    "name": "นาง สุกัลยา จันต๊ะอิน",
+    "total": 20000.0,
+    "pct": 5.7
+  },
+  {
+    "name": "นาย ธนวัฏ และ น.ส. ยุพเรศ",
+    "total": 15814.0,
+    "pct": 4.5
+  },
+  {
+    "name": "นาย แสวง ทองคำ",
+    "total": 15000.0,
+    "pct": 4.3
+  },
+  {
+    "name": "นาย เสถียร จันทรนวล",
+    "total": 14119.0,
+    "pct": 4.0
+  },
+  {
+    "name": "น.ส. ผนิสา คงอ่ำ",
+    "total": 9000.0,
+    "pct": 2.6
+  },
+  {
+    "name": "น.ส. สุจิตรา หลวงตัน",
+    "total": 8161.0,
+    "pct": 2.3
+  },
+  {
+    "name": "การไฟฟ้าส่วนภูมิภาค",
+    "total": 7063.62,
+    "pct": 2.0
+  },
+  {
+    "name": "นาย ตา ทะนนท์",
+    "total": 6500.0,
+    "pct": 1.8
+  },
+  {
+    "name": "นาง จันทร์ฟอง ติ๊บมา",
+    "total": 6000.0,
+    "pct": 1.7
+  },
+  {
+    "name": "น.ส. จุฑาทิพย์ เจริญสุวรรณ์",
+    "total": 5200.0,
+    "pct": 1.5
+  },
+  {
+    "name": "นาย ทองคำ กะทง",
+    "total": 2535.0,
+    "pct": 0.7
+  },
+  {
+    "name": "นาย เสถียร จันทร์นวล",
+    "total": 2380.0,
+    "pct": 0.7
+  },
+  {
+    "name": "นาย วรรณพงศ์ เทพเกษร",
+    "total": 1335.0,
+    "pct": 0.4
+  },
+  {
+    "name": "นาง วิลาวัลย์ ปัจจวงศ์",
+    "total": 500.0,
+    "pct": 0.1
+  }
+],
+    topClients: [
+  {
+    "name": "นาง พรรณี พ.",
+    "total": 71700.0,
+    "pct": 25.2
+  },
+  {
+    "name": "NARAWUT PONGL",
+    "total": 61100.0,
+    "pct": 21.5
+  },
+  {
+    "name": "น.ส. เจนจิรา",
+    "total": 49995.0,
+    "pct": 17.6
+  },
+  {
+    "name": "นาย อุดมเลิศ พฤกษ์ภัทรกุล",
+    "total": 30000.0,
+    "pct": 10.6
+  },
+  {
+    "name": "หจก. วิภพลาภิน",
+    "total": 22000.0,
+    "pct": 7.7
+  },
+  {
+    "name": "ร้อยตำรวจเอก พุทธิพงษ์",
+    "total": 20000.0,
+    "pct": 7.0
+  },
+  {
+    "name": "บิลเงินสด มานพ",
+    "total": 12000.0,
+    "pct": 4.2
+  },
+  {
+    "name": "ใบส่งของ ส.ไผ่งาม",
+    "total": 7700.0,
+    "pct": 2.7
+  },
+  {
+    "name": "นาย ภักดี ต. (ที่นี่มีดีไซน์)",
+    "total": 4550.0,
+    "pct": 1.6
+  },
+  {
+    "name": "MR. WICHOT",
+    "total": 3150.0,
+    "pct": 1.1
+  },
+  {
+    "name": "น.ส. ยุพเรศ อ.",
+    "total": 1980.0,
+    "pct": 0.7
+  }
+]
+};
+
+</script>
+<script>
+// MTP Wood Thailand - September 2026 Interactive Application Logic
+
+document.addEventListener('DOMContentLoaded', () => {
+    initTabs();
+    initKPIs();
+    renderCharts();
+    renderRevenueTable(window.SEP_2026_DATA.revenue);
+    renderExpensesTable(window.SEP_2026_DATA.expenses);
+    renderTwashTable(window.SEP_2026_DATA.twashLoans);
+    renderDebtsTable(window.SEP_2026_DATA.debts);
+    renderVendorsTable(window.SEP_2026_DATA.topPayees);
+    renderCashFlowBridge();
+    initFilters();
+    initGitHubGenerator();
+});
+
+// 1. Tab Navigation
+function initTabs() {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            tabBtns.forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            btn.classList.add('active');
+            const targetId = btn.getAttribute('data-target');
+            const targetContent = document.getElementById(targetId);
+            if (targetContent) {
+                targetContent.classList.add('active');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+    });
+}
+
+function switchToTab(tabId) {
+    const btn = document.querySelector(`.tab-btn[data-target="${tabId}"]`);
+    if (btn) btn.click();
+}
+
+// 2. Initialize KPIs
+function initKPIs() {
+    const meta = window.SEP_2026_DATA.meta;
+    const formatBaht = (n) => '฿' + Number(n).toLocaleString('th-TH', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    
+    document.getElementById('kpi-rev').innerText = formatBaht(meta.totalRevenue);
+    document.getElementById('kpi-exp').innerText = formatBaht(meta.totalExpenses);
+    
+    const elNet = document.getElementById('kpi-net');
+    elNet.innerText = formatBaht(meta.netProfit);
+    if (meta.netProfit < 0) {
+        elNet.style.color = 'var(--danger-color)';
+    } else {
+        elNet.style.color = 'var(--success-color)';
+    }
+    
+    document.getElementById('kpi-interest').innerText = formatBaht(meta.interestPaidThisMonth);
+    document.getElementById('kpi-twash').innerText = formatBaht(meta.totalTwashLoan);
+    document.getElementById('kpi-debts').innerText = formatBaht(meta.totalLiabilities);
+}
+
+// 3. Render Charts
+let cashflowChartInstance = null;
+let categoryChartInstance = null;
+
+function renderCharts() {
+    const meta = window.SEP_2026_DATA.meta;
+    const cats = window.SEP_2026_DATA.categories;
+
+    // Cashflow Bar Chart
+    const ctxBar = document.getElementById('cashflowBarChart');
+    if (ctxBar && window.Chart) {
+        if (cashflowChartInstance) cashflowChartInstance.destroy();
+        cashflowChartInstance = new Chart(ctxBar, {
+            type: 'bar',
+            data: {
+                labels: ['รายรับขายไม้', 'รายจ่ายรวม', 'ขาดทุนดำเนินงาน', 'เงินยืม ที.วอช (งวดนี้)'],
+                datasets: [{
+                    label: 'จำนวนเงิน (บาท)',
+                    data: [meta.totalRevenue, meta.totalExpenses, Math.abs(meta.netProfit), meta.totalTwashLoan],
+                    backgroundColor: [
+                        'rgba(93, 110, 83, 0.85)',   // Green for Rev
+                        'rgba(166, 91, 76, 0.85)',   // Red for Exp
+                        'rgba(194, 107, 72, 0.85)',  // Orange-red for Deficit
+                        'rgba(140, 98, 57, 0.85)'    // Teak wood for Twash
+                    ],
+                    borderColor: ['#5d6e53', '#a65b4c', '#c26b48', '#8c6239'],
+                    borderWidth: 1.5,
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: (ctx) => ' ฿' + Number(ctx.raw).toLocaleString('th-TH', { minimumFractionDigits: 2 })
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: (v) => '฿' + (v / 1000).toLocaleString() + 'k'
+                        },
+                        grid: { color: 'rgba(232, 222, 210, 0.5)' }
+                    },
+                    x: {
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+    }
+
+    // Expense Category Doughnut Chart
+    const ctxDoughnut = document.getElementById('expenseCategoryChart');
+    if (ctxDoughnut && window.Chart) {
+        if (categoryChartInstance) categoryChartInstance.destroy();
+        
+        const topCats = cats.slice(0, 6);
+        const otherSum = cats.slice(6).reduce((acc, c) => acc + c.total, 0);
+        const labels = topCats.map(c => c.name);
+        const dataVals = topCats.map(c => c.total);
+        if (otherSum > 0) {
+            labels.push('อื่นๆ (' + (cats.length - 6) + ' หมวด)');
+            dataVals.push(otherSum);
+        }
+
+        categoryChartInstance = new Chart(ctxDoughnut, {
+            type: 'doughnut',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: dataVals,
+                    backgroundColor: [
+                        '#8c6239', // Teak
+                        '#5d6e53', // Olive
+                        '#a65b4c', // Terracotta
+                        '#d9822b', // Amber
+                        '#6c4722', // Dark oak
+                        '#7b8893', // Slate
+                        '#ebdcb9'  // Beige
+                    ],
+                    borderWidth: 2,
+                    borderColor: '#ffffff'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'right',
+                        labels: {
+                            boxWidth: 14,
+                            font: { family: 'Sarabun', size: 12 }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: (ctx) => {
+                                const val = Number(ctx.raw);
+                                const pct = (val / meta.totalExpenses * 100).toFixed(1);
+                                return ` ${ctx.label}: ฿${val.toLocaleString('th-TH', {minimumFractionDigits: 2})} (${pct}%)`;
+                            }
+                        }
+                    }
+                },
+                cutout: '62%'
+            }
+        });
+    }
+}
+
+// 4. Render Tables
+function renderRevenueTable(list) {
+    const tbody = document.getElementById('rev-table-body');
+    if (!tbody) return;
+    tbody.innerHTML = '';
+    
+    list.forEach(item => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td class="text-center" style="font-weight:600; color:var(--text-muted);">${item.no}</td>
+            <td class="text-center">${item.date}</td>
+            <td class="text-center" style="color:var(--text-secondary);">${item.time || '-'}</td>
+            <td><strong>${escapeHtml(item.desc)}</strong></td>
+            <td><span class="badge" style="background:#e8f4fd; color:#0d47a1; font-weight:600;">${escapeHtml(item.client)}</span></td>
+            <td><span class="badge badge-success">${escapeHtml(item.cat)}</span></td>
+            <td class="text-right" style="font-weight:700; color:var(--success-color);">฿${item.amt.toLocaleString('th-TH', {minimumFractionDigits: 2})}</td>
+        `;
+        tbody.appendChild(tr);
+    });
+
+    const sum = list.reduce((a, b) => a + b.amt, 0);
+    document.getElementById('rev-table-count').innerText = `${list.length} รายการ`;
+    document.getElementById('rev-table-total').innerText = `฿${sum.toLocaleString('th-TH', {minimumFractionDigits: 2})}`;
+}
+
+function renderExpensesTable(list) {
+    const tbody = document.getElementById('exp-table-body');
+    if (!tbody) return;
+    tbody.innerHTML = '';
+    
+    list.forEach(item => {
+        const tr = document.createElement('tr');
+        let catClass = 'badge-muted';
+        if (item.cat.includes('แรง')) catClass = 'badge-primary';
+        else if (item.cat.includes('ไม้')) catClass = 'badge-success';
+        else if (item.cat.includes('น้ำมัน')) catClass = 'badge-warning';
+        else if (item.cat.includes('ดอกเบี้ย')) catClass = 'badge-danger';
+        else if (item.cat.includes('ไฟฟ้า')) catClass = 'badge-info';
+
+        tr.innerHTML = `
+            <td class="text-center" style="font-weight:600; color:var(--text-muted);">${item.no}</td>
+            <td class="text-center">${item.date}</td>
+            <td class="text-center" style="color:var(--text-secondary);">${item.time || '-'}</td>
+            <td><strong>${escapeHtml(item.desc)}</strong></td>
+            <td><span style="color:var(--text-primary); font-weight:500;">${escapeHtml(item.payee)}</span></td>
+            <td><span class="badge ${catClass}">${escapeHtml(item.cat)}</span></td>
+            <td class="text-right" style="font-weight:700; color:var(--danger-color);">฿${item.amt.toLocaleString('th-TH', {minimumFractionDigits: 2})}</td>
+        `;
+        tbody.appendChild(tr);
+    });
+
+    const sum = list.reduce((a, b) => a + b.amt, 0);
+    document.getElementById('exp-table-count').innerText = `${list.length} รายการ`;
+    document.getElementById('exp-table-total').innerText = `฿${sum.toLocaleString('th-TH', {minimumFractionDigits: 2})}`;
+}
+
+function renderTwashTable(list) {
+    const tbody = document.getElementById('twash-table-body');
+    if (!tbody) return;
+    tbody.innerHTML = '';
+    
+    list.forEach(item => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td class="text-center" style="font-weight:600; color:var(--text-muted);">${item.no}</td>
+            <td class="text-center">${item.date}</td>
+            <td class="text-center" style="color:var(--text-secondary);">${item.time || '-'}</td>
+            <td><strong>${escapeHtml(item.desc)}</strong></td>
+            <td>${escapeHtml(item.party)}</td>
+            <td class="text-center"><span class="badge badge-warning">${escapeHtml(item.type)}</span></td>
+            <td class="text-right" style="font-weight:700; color:var(--accent-color);">฿${item.amt.toLocaleString('th-TH', {minimumFractionDigits: 2})}</td>
+        `;
+        tbody.appendChild(tr);
+    });
+
+    const sum = list.reduce((a, b) => a + b.amt, 0);
+    document.getElementById('twash-table-count').innerText = `${list.length} รายการ`;
+    document.getElementById('twash-table-total').innerText = `฿${sum.toLocaleString('th-TH', {minimumFractionDigits: 2})}`;
+}
+
+function renderDebtsTable(list) {
+    const tbody = document.getElementById('debt-table-body');
+    if (!tbody) return;
+    tbody.innerHTML = '';
+    
+    list.forEach(item => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td class="text-center" style="font-weight:600; color:var(--text-muted);">${item.no}</td>
+            <td><strong>${escapeHtml(item.name)}</strong></td>
+            <td><span class="badge badge-muted">${escapeHtml(item.type)}</span></td>
+            <td class="text-right">${item.principal ? '฿' + item.principal.toLocaleString('th-TH', {minimumFractionDigits: 2}) : '-'}</td>
+            <td class="text-right" style="color:var(--accent-color); font-weight:600;">${item.interestPaid ? '฿' + item.interestPaid.toLocaleString('th-TH', {minimumFractionDigits: 2}) : '-'}</td>
+            <td class="text-center" style="color:var(--text-secondary);">${item.interestRate}</td>
+            <td class="text-right" style="font-weight:700; color:var(--danger-color);">฿${item.balance.toLocaleString('th-TH', {minimumFractionDigits: 2})}</td>
+            <td style="font-size:0.875rem; color:var(--text-secondary);">${escapeHtml(item.remarks)}</td>
+        `;
+        tbody.appendChild(tr);
+    });
+
+    const totBalance = list.reduce((a, b) => a + b.balance, 0);
+    const totInterest = list.reduce((a, b) => a + b.interestPaid, 0);
+    document.getElementById('debt-table-total-interest').innerText = `฿${totInterest.toLocaleString('th-TH', {minimumFractionDigits: 2})}`;
+    document.getElementById('debt-table-total-balance').innerText = `฿${totBalance.toLocaleString('th-TH', {minimumFractionDigits: 2})}`;
+}
+
+function renderVendorsTable(list) {
+    const tbody = document.getElementById('vendor-table-body');
+    if (!tbody) return;
+    tbody.innerHTML = '';
+    
+    list.forEach((item, idx) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td class="text-center" style="font-weight:700; color:var(--accent-color);">${idx + 1}</td>
+            <td><strong>${escapeHtml(item.name)}</strong></td>
+            <td class="text-right" style="font-weight:700; color:var(--danger-color);">฿${item.total.toLocaleString('th-TH', {minimumFractionDigits: 2})}</td>
+            <td class="text-center" style="font-weight:600; color:var(--text-secondary);">${item.pct}%</td>
+            <td>
+                <div class="progress-bar-bg" style="background:#eee; height:8px; border-radius:4px; overflow:hidden;">
+                    <div style="background:var(--accent-color); width:${item.pct}%; height:100%; border-radius:4px;"></div>
+                </div>
+            </td>
+        `;
+        tbody.appendChild(tr);
+    });
+}
+
+function renderCashFlowBridge() {
+    const meta = window.SEP_2026_DATA.meta;
+    const tbody = document.getElementById('bridge-table-body');
+    if (!tbody) return;
+    
+    const rows = [
+        { name: '1. รายรับจริงจากการขายไม้และแปรรูป', type: 'ดำเนินงาน (Operating In)', inAmt: meta.totalRevenue, outAmt: 0, net: meta.totalRevenue, note: 'ขายไม้โครงป้ายและไม้แปรรูป 16 บิล' },
+        { name: '2. ค่าใช้จ่ายดำเนินงานจริง (ก่อนดอกเบี้ย)', type: 'ดำเนินงาน (Operating Out)', inAmt: 0, outAmt: meta.totalExpenses - meta.interestPaidThisMonth, net: -(meta.totalExpenses - meta.interestPaidThisMonth), note: 'ค่าไม้, ค่าแรงงาน, ค่าน้ำมัน, ค่าไฟฟ้า, ฯลฯ' },
+        { name: '3. ดอกเบี้ยจ่ายงวดนี้ (คุณอาแสวง + บ.วัน)', type: 'ต้นทุนการเงิน (Financing Out)', inAmt: 0, outAmt: meta.interestPaidThisMonth, net: -meta.interestPaidThisMonth, note: 'อาแสวง 7,500 + บ.วัน 4,500' },
+        { name: '>> ผลการดำเนินงานจริงสุทธิ (Operating P&L)', type: 'ผลประกอบการจริง', inAmt: meta.totalRevenue, outAmt: meta.totalExpenses, net: meta.netProfit, note: 'ขาดทุนจากการดำเนินงานประจำงวด', isSubtotal: true },
+        { name: '4. รับเงินยืม ที.วอช เพื่อหมุนเวียนสภาพคล่อง', type: 'จัดหาเงิน (Financing In)', inAmt: meta.totalTwashLoan, outAmt: 0, net: meta.totalTwashLoan, note: 'ยืมหมุนเวียนเสริมสภาพคล่องหน้างาน 27 รายการ' },
+        { name: '>> สรุปกระแสเงินสดสภาพคล่องสุทธิประจำงวด (Net Cash)', type: 'กระแสเงินสดสุทธิ', inAmt: meta.totalRevenue + meta.totalTwashLoan, outAmt: meta.totalExpenses, net: meta.netProfit + meta.totalTwashLoan, note: 'สภาพคล่องเป็นบวกด้วยเงินยืม ที.วอช ประคองกิจการ', isHighlight: true }
+    ];
+
+    tbody.innerHTML = '';
+    rows.forEach(r => {
+        const tr = document.createElement('tr');
+        if (r.isSubtotal) {
+            tr.style.backgroundColor = 'var(--bg-secondary)';
+            tr.style.fontWeight = '700';
+        } else if (r.isHighlight) {
+            tr.style.backgroundColor = '#e8f5e9';
+            tr.style.fontWeight = '700';
+        }
+
+        const netColor = r.net < 0 ? 'var(--danger-color)' : 'var(--success-color)';
+        tr.innerHTML = `
+            <td><strong>${r.name}</strong></td>
+            <td><span class="badge badge-muted">${r.type}</span></td>
+            <td class="text-right" style="color:var(--success-color);">${r.inAmt ? '฿' + r.inAmt.toLocaleString('th-TH', {minimumFractionDigits: 2}) : '-'}</td>
+            <td class="text-right" style="color:var(--danger-color);">${r.outAmt ? '฿' + r.outAmt.toLocaleString('th-TH', {minimumFractionDigits: 2}) : '-'}</td>
+            <td class="text-right" style="color:${netColor}; font-weight:700;">฿${r.net.toLocaleString('th-TH', {minimumFractionDigits: 2})}</td>
+            <td style="font-size:0.875rem; color:var(--text-secondary);">${r.note}</td>
+        `;
+        tbody.appendChild(tr);
+    });
+}
+
+// 5. Filters and Search
+function initFilters() {
+    // Revenue Search
+    const revInput = document.getElementById('rev-search');
+    if (revInput) {
+        revInput.addEventListener('input', (e) => {
+            const q = e.target.value.toLowerCase().trim();
+            const filtered = window.SEP_2026_DATA.revenue.filter(item => 
+                item.desc.toLowerCase().includes(q) ||
+                item.client.toLowerCase().includes(q) ||
+                item.cat.toLowerCase().includes(q)
+            );
+            renderRevenueTable(filtered);
+        });
+    }
+
+    // Expense Search & Filter
+    const expInput = document.getElementById('exp-search');
+    const expCatSelect = document.getElementById('exp-cat-filter');
+    
+    // Populate categories
+    if (expCatSelect) {
+        const cats = window.SEP_2026_DATA.categories;
+        cats.forEach(c => {
+            const opt = document.createElement('option');
+            opt.value = c.name;
+            opt.innerText = `${c.name} (${c.pct}%)`;
+            expCatSelect.appendChild(opt);
+        });
+
+        const filterExpenses = () => {
+            const q = (expInput ? expInput.value : '').toLowerCase().trim();
+            const selCat = expCatSelect.value;
+            const filtered = window.SEP_2026_DATA.expenses.filter(item => {
+                const matchQ = item.desc.toLowerCase().includes(q) ||
+                               item.payee.toLowerCase().includes(q) ||
+                               item.cat.toLowerCase().includes(q);
+                const matchCat = !selCat || item.cat === selCat;
+                return matchQ && matchCat;
+            });
+            renderExpensesTable(filtered);
+        };
+
+        if (expInput) expInput.addEventListener('input', filterExpenses);
+        expCatSelect.addEventListener('change', filterExpenses);
+    }
+
+    // Twash Search
+    const twashInput = document.getElementById('twash-search');
+    if (twashInput) {
+        twashInput.addEventListener('input', (e) => {
+            const q = e.target.value.toLowerCase().trim();
+            const filtered = window.SEP_2026_DATA.twashLoans.filter(item => 
+                item.desc.toLowerCase().includes(q) ||
+                item.party.toLowerCase().includes(q) ||
+                item.type.toLowerCase().includes(q)
+            );
+            renderTwashTable(filtered);
+        });
+    }
+}
+
+// 6. Interactive GitHub Generator Logic
+function initGitHubGenerator() {
+    const inputUser = document.getElementById('gh-username-input');
+    const previewUrl = document.getElementById('gh-preview-url');
+    const btnCopy = document.getElementById('btn-copy-gh-link');
+    const btnOpenCreate = document.getElementById('btn-open-gh-create');
+    const codeSnippet = document.getElementById('gh-cli-snippet');
+
+    const updateGitHubLinks = () => {
+        const rawUser = (inputUser.value || '').trim() || 'your-github-username';
+        const cleanUser = rawUser.replace(/[^a-zA-Z0-9-_]/g, '').toLowerCase() || 'your-github-username';
+        const repoName = 'mtp-wood-september-2026';
+        const pagesUrl = `https://${cleanUser}.github.io/${repoName}/`;
+        
+        previewUrl.innerText = pagesUrl;
+        previewUrl.href = pagesUrl;
+
+        if (btnOpenCreate) {
+            btnOpenCreate.href = `https://github.com/new?name=${repoName}&description=MTP+Wood+Thailand+-+September+2026+Financial+Dashboard&public=true`;
+        }
+
+        if (codeSnippet) {
+            codeSnippet.innerText = `# 1. เปิดโฟลเดอร์นี้ใน Terminal / PowerShell
+cd "c:\\Users\\USER\\Desktop\\M\\รายงานที่มีต้นทุนเพิ่ม\\MTP_WOOD_September_2026"
+
+# 2. เริ่มต้นและอัปโหลดขึ้น GitHub
+git init
+git add .
+git commit -m "Initial release: MTP Wood September 2026 Financial Dashboard"
+git branch -M main
+git remote add origin https://github.com/${cleanUser}/${repoName}.git
+git push -u origin main`;
+        }
+    };
+
+    if (inputUser) {
+        inputUser.addEventListener('input', updateGitHubLinks);
+        updateGitHubLinks();
+    }
+
+    if (btnCopy) {
+        btnCopy.addEventListener('click', () => {
+            const textToCopy = previewUrl.innerText;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                const originalText = btnCopy.innerHTML;
+                btnCopy.innerHTML = '✅ คัดลอกสำเร็จแล้ว!';
+                btnCopy.style.backgroundColor = 'var(--success-color)';
+                setTimeout(() => {
+                    btnCopy.innerHTML = originalText;
+                    btnCopy.style.backgroundColor = '';
+                }, 2500);
+            }).catch(() => {
+                alert('URL ของคุณคือ: ' + textToCopy);
+            });
+        });
+    }
+}
+
+// Helper: Escape HTML
+function escapeHtml(str) {
+    if (!str) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+}
+
+</script>
+</body>
+</html>
